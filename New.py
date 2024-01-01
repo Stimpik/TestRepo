@@ -11,5 +11,6 @@ for x in range(2):
     my_num += 1
     start_date += datetime.timedelta(days=1)
     for y in range(randint(6, 10)):
+        my_num += 3
         command = rf'git commit -am "test_change {hex(my_num)}{oct(x + y + next(counter))}" --date "{start_date.strftime('%m/%d/%Y')}"'
         subprocess.run(command)
