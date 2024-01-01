@@ -4,7 +4,7 @@ from random import randint
 from itertools import count
 import time
 
-my_num = 0
+my_num = 2
 counter = count(1, 3)
 start_date = datetime.date(year=2023, month=12, day=31)
 for x in range(2):
