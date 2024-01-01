@@ -15,3 +15,5 @@ for x in range(2):
         command = rf'git commit -am "test_change {hex(my_num)}{oct(x + y + next(counter))}" --date "{start_date.strftime('%m/%d/%Y')}"'
         subprocess.run(command)
         time.sleep(1)
+        subprocess.run('git push')
+        time.sleep(1)
